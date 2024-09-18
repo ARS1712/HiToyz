@@ -1,0 +1,469 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#Header{
+    display: flex;
+    object-position: center;
+}
+
+#Navbar{
+    background-color: rgba(167, 225, 250, 1);
+    height: 40px;
+    color:black;
+    font-weight: 600;
+    font-size: larger;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+}
+
+#Body{
+    background-color: rgba(233, 233, 233, 0.5);
+    height: 1200px;
+}
+
+#Center{
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+
+#Body h1{
+    line-height: 1.5;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+}
+
+.nav-button{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-button:hover{
+    color: rgb(243, 103, 238);
+}
+
+#Footer{
+    margin-top: 1%;
+    background-color: transparent;
+    height: 220px;
+}
+
+#Footer div h3{
+    margin-bottom: 20px;
+    color: #F13737;
+}
+
+.Inner-Footer{
+    margin-top: 1%;
+    background-color: #A7E1FA;
+    height: 200px;
+    padding: 0px 15%;
+    display: flex;
+}
+
+.Inner-Footer div{
+    text-align: center;
+}
+
+.Quick-Links a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Helper-Links{
+    flex-grow: 2;
+}
+
+.Helper-Links a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Links:hover{
+    color: #F367EE;
+}
+
+.Social-Links{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Social-Media-Icons{
+    margin-top: 30px;
+}
+
+.Social-Media-Icons img{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Outer-Footer{
+    background-color: #E9E9E9;
+    height: 20px;
+    font-size: large;
+    text-align: center;
+    color: #F13737;
+}
+
+.Slider-Container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.Slides input{
+    display: none;
+}
+
+.StoreSlide{
+    width: 20%;
+    transition: 2s;
+}
+
+.StoreSlide img{
+    width: 800px;
+    height: 500px;
+}
+
+.StoreManualNavigator{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.Store-Manual-Button{
+    border: 2px solid #F367EE;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.Store-Manual-Button:not(:last-child){
+    margin-right: 20px;
+}
+
+#StoreRadio1:checked ~ .First{
+    margin-left: 0;
+}
+
+#StoreRadio2:checked ~ .First{
+    margin-left: -20%;
+}
+
+#StoreRadio3:checked ~ .First{
+    margin-left: -40%;
+}
+
+#StoreRadio4:checked ~ .First{
+    margin-left: -60%;
+}
+
+#StoreRadio5:checked ~ .First{
+    margin-left: -80%;
+}
+
+#StoreRadio6:checked ~ .First{
+    margin-left: -100%;
+}
+
+.StoreClickedNavigator{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.StoreClickedNavigator div{
+    border: 2px solid #F367EE;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.StoreClickedNavigator div:not(:last-child){
+    margin-right: 20px;
+}
+
+#StoreRadio1:checked ~ .StoreClickedNavigator .Store-Clicked-Button1{
+    background: rgba(243, 103, 238, 1);
+}
+
+#StoreRadio2:checked ~ .StoreClickedNavigator .Store-Clicked-Button2{
+    background: rgba(243, 103, 238, 1);
+}
+
+#StoreRadio3:checked ~ .StoreClickedNavigator .Store-Clicked-Button3{
+    background: rgba(243, 103, 238, 1);
+}
+
+#StoreRadio4:checked ~ .StoreClickedNavigator .Store-Clicked-Button4{
+    background: rgba(243, 103, 238, 1);
+}
+
+#StoreRadio5:checked ~ .StoreClickedNavigator .Store-Clicked-Button5{
+    background: rgba(243, 103, 238, 1);
+}
+
+#StoreRadio6:checked ~ .StoreClickedNavigator .Store-Clicked-Button6{
+    background: rgba(243, 103, 238, 1);
+}
+
+.CustomerSlide{
+    width: 20%;
+    transition: 2s;
+}
+
+.CustomerSlide img{
+    width: 800px;
+    height: 500px;
+}
+
+.CustomerManualNavigator{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.Customer-Manual-Button{
+    border: 2px solid #F367EE;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.Customer-Manual-Button:not(:last-child){
+    margin-right: 20px;
+}
+
+#CustomerRadio1:checked ~ .First{
+    margin-left: 0;
+}
+
+#CustomerRadio2:checked ~ .First{
+    margin-left: -20%;
+}
+
+#CustomerRadio3:checked ~ .First{
+    margin-left: -40%;
+}
+
+#CustomerRadio4:checked ~ .First{
+    margin-left: -60%;
+}
+
+#CustomerRadio5:checked ~ .First{
+    margin-left: -80%;
+}
+
+#CustomerRadio6:checked ~ .First{
+    margin-left: -100%;
+}
+
+#CustomerRadio7:checked ~ .First{
+    margin-left: -120%;
+}
+
+.CustomerClickedNavigator{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.CustomerClickedNavigator div{
+    border: 2px solid #F367EE;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.CustomerClickedNavigator div:not(:last-child){
+    margin-right: 20px;
+}
+
+#CustomerRadio1:checked ~ .CustomerClickedNavigator .Customer-Clicked-Button1{
+    background: rgba(243, 103, 238, 1);
+}
+
+#CustomerRadio2:checked ~ .CustomerClickedNavigator .Customer-Clicked-Button2{
+    background: rgba(243, 103, 238, 1);
+}
+
+#CustomerRadio3:checked ~ .CustomerClickedNavigator .Customer-Clicked-Button3{
+    background: rgba(243, 103, 238, 1);
+}
+
+#CustomerRadio4:checked ~ .CustomerClickedNavigator .Customer-Clicked-Button4{
+    background: rgba(243, 103, 238, 1);
+}
+
+#CustomerRadio5:checked ~ .CustomerClickedNavigator .Customer-Clicked-Button5{
+    background: rgba(243, 103, 238, 1);
+}
+
+#CustomerRadio6:checked ~ .CustomerClickedNavigator .Customer-Clicked-Button6{
+    background: rgba(243, 103, 238, 1);
+}
+
+#CustomerRadio7:checked ~ .CustomerClickedNavigator .Customer-Clicked-Button7{
+    background: rgba(243, 103, 238, 1);
+}
+
+@media screen and (max-width: 768px) {
+    #Navbar{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+    #Body{
+        height: auto;
+        width: auto;
+    }
+    .Slider{
+        width: 387px;
+        height: 280px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .Slides{
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+    .Slides input{
+        display: none;
+    }
+    .StoreSlide{
+        width: auto;
+        transition: 2s;
+    }
+    .StoreSlide img{
+        max-width: 387px;
+        max-height: 280px;
+    }
+    .StoreManualNavigator{
+        max-width: 387px;
+        margin-top: -30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    #StoreRadio1:checked ~ .First{
+        margin-left: 0;
+    }
+    #StoreRadio2:checked ~ .First{
+        margin-left: -100%;
+    }
+    #StoreRadio3:checked ~ .First{
+        margin-left: -200%;
+    }
+    #StoreRadio4:checked ~ .First{
+        margin-left: -300%;
+    }
+    #StoreRadio5:checked ~ .First{
+        margin-left: -400%;
+    }
+    #StoreRadio6:checked ~ .First{
+        margin-left: -500%;
+    }
+    .StoreClickedNavigator{
+        max-width: 387px;
+        margin-top: 255px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    .CustomerSlide{
+        width: auto;
+        transition: 2s;
+    }
+    .CustomerSlide img{
+        max-width: 387px;
+        max-height: 280px;
+    }
+    .CustomerManualNavigator{
+        max-width: 387px;
+        margin-top: -30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    #CustomerRadio1:checked ~ .First{
+        margin-left: 0;
+    }
+    #CustomerRadio2:checked ~ .First{
+        margin-left: -100%;
+    }
+    #CustomerRadio3:checked ~ .First{
+        margin-left: -200%;
+    }
+    #CustomerRadio4:checked ~ .First{
+        margin-left: -300%;
+    }
+    #CustomerRadio5:checked ~ .First{
+        margin-left: -400%;
+    }
+    #CustomerRadio6:checked ~ .First{
+        margin-left: -500%;
+    }
+    #CustomerRadio7:checked ~ .First{
+        margin-left: -600%;
+    }
+    .CustomerClickedNavigator{
+        max-width: 387px;
+        margin-top: 255px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    .Inner-Footer{
+        height: auto;
+    }
+    .Outer-Footer{
+        height: auto;
+    }
+}

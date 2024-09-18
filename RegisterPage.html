@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=768px, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            background-image: linear-gradient(rgba(241, 55, 55, 0.5), rgba(87, 188, 244, 0.5), rgba(244, 200, 87, 0.5), rgba(106, 243, 103, 0.5), rgba(243, 103, 238, 0.5));
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="RegisterPageStyler.css">
+</head>
+<body>
+    <div id="Header">
+        <a href="HomePage.html">
+            <img src="./Assets/Logo HI-Toyz.png" alt="Home Page" width="50%" id="Center">
+        </a>      
+    </div>
+
+    <div id="Navbar">
+        <a href="HomePage.html" class="nav-button">Home</a>
+        <a href="ProductsPage.html" class="nav-button">Products</a>
+        <a href="GalleryPage.html" class="nav-button">Gallery</a>
+        <a href="EventPage.html" class="nav-button">Event</a>
+        <a href="" class="nav-button" style="color:#F367EE">Register</a>
+    </div>
+
+    <div id="Body">
+        <h1>Register</h1>
+        <form action="" id="RegistrationForm">
+            <table class="Table">
+                <tr class="Inputs">
+                    <td><label for="">Full Name</label></td>
+                    <td>
+                        <input type="text" placeholder="Enter Your Full Name" id="Input-Name">
+                    </td>
+                </tr>
+                <tr class="Inputs">
+                    <td><label for="">Date of Birth</label></td>
+                    <td>
+                        <input type="date" id="Input-DoB">
+                    </td>
+                </tr>
+                <tr class="Inputs">
+                    <td><label for="">Email</label></td>
+                    <td>
+                        <input type="text" placeholder="Enter Your Email" id="Input-Email">
+                    </td>
+                </tr>
+                <tr class="Inputs">
+                    <td><label for="">Password</label></td>
+                    <td>
+                        <input type="password" placeholder="Enter Your Password" id="Input-Password">
+                    </td>
+                </tr>
+                <tr class="Inputs">
+                    <td><label for="">Confirm Password</label></td>
+                    <td>
+                        <input type="password" placeholder="Confirm Your Password" id="Confirm-Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="Agree">
+                        <label for="Agree">I agree to the terms and conditions.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p id="Validate"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Register" onclick="validate()"></td>
+                </tr>
+            </table>
+        </form>
+        <script src="RegisterPageScript.js"></script>
+    </div>
+    
+    <div id="Footer">
+        <div class="Inner-Footer">
+            <div class="Quick-Links">
+                <h3>Quick Links</h3>
+                <a href="HomePage.html" class="Links">Home</a>
+                <a href="ProductsPage.html" class="Links">Products</a>
+                <a href="GalleryPage.html" class="Links">Gallery</a>
+                <a href="EventPage.html" class="Links">Event</a>
+                <a href="RegisterPage.html" class="Links">Register</a>
+            </div>
+            <div class="Helper-Links">
+                <h3>Some Links</h3>
+                <a href="#" class="Links">FAQ</a>
+                <a href="#" class="Links">Terms</a>
+                <a href="#" class="Links">About</a>
+                <a href="#" class="Links">Support</a>
+            </div>
+            <div class="Social-Links">
+                <h3>Contact Us</h3>
+                <div class="Social-Media-Icons">
+                    <img src="./Assets/Facebook.png" alt="" width="35px">
+                    <img src="./Assets/Instagram.png" alt="" width="35px">
+                    <img src="./Assets/Twitter.png" alt="" width="35px">
+                    <img src="./Assets/Email.png" alt="" width="42px">
+                </div>
+            </div>
+        </div>
+        <div class="Outer-Footer">
+            Copyright &copy; HI-Toyz, 2023. All Right Reserved.
+        </div>
+    </div>
+</body>
+</html>

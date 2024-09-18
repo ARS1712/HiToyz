@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=768px, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        body{
+            background-image: linear-gradient(rgba(241, 55, 55, 0.5), rgba(87, 188, 244, 0.5), rgba(244, 200, 87, 0.5), rgba(106, 243, 103, 0.5), rgba(243, 103, 238, 0.5));
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="EventPageStyler.css">
+</head>
+<body>
+    <div id="Header">
+        <a href="HomePage.html">
+            <img src="./Assets/Logo HI-Toyz.png" alt="Home Page" width="50%" id="Center">
+        </a>      
+    </div>
+
+    <div id="Navbar">
+        <a href="HomePage.html" class="nav-button">Home</a>
+        <a href="ProductsPage.html" class="nav-button">Products</a>
+        <a href="GalleryPage.html" class="nav-button">Gallery</a>
+        <a href="" class="nav-button" style="color:#F367EE">Event</a>
+        <a href="RegisterPage.html" class="nav-button">Register</a>
+    </div>
+
+    <div id="Body">
+        <h1>Events</h1>
+        <div class="Slider-Container">
+            <div class="EventSlider">
+                <div class="EventSlides">
+                    <input type="radio" name="radio-button" id="EventRadio1">
+                    <input type="radio" name="radio-button" id="EventRadio2">
+                    <input type="radio" name="radio-button" id="EventRadio3">
+                    <input type="radio" name="radio-button" id="EventRadio4">
+                    <input type="radio" name="radio-button" id="EventRadio5">
+                    <input type="radio" name="radio-button" id="EventRadio6">
+        
+                    <div class="EventSlide First">
+                        <img src="./Assets/Event1.jpg" alt="Kids Toys Sale">
+                        <div class="EventCaption">
+                            <h3>Rubrik Tournament</h3>
+                            <p>Celebrate 4th July with us by joining our Rubrik Tournament and winning the grand prize! Join now by register through this link: https://tinyurl.RegisterTournamentRubrik.</p>
+                        </div>
+                    </div>
+                    <div class="EventSlide">
+                        <img src="./Assets/Event2.jpg" alt="">
+                        <div class="EventCaption">
+                            <h3>Board Games Competition</h3>
+                            <p>Ladies and gentleman, welcome to our Board Games Competition! Celebrating Women's Equality Day, we will invite Riri Williams and Wanda Maximoff to be our special judge on this competition!</p>
+                        </div>
+                    </div>
+                    <div class="EventSlide">
+                        <img src="./Assets/Event3.jpg" alt="">
+                        <div class="EventCaption">
+                            <h3>LEGO Party</h3>
+                            <p>It's our 3rd Anniversary! Come and join us at our 'LEGO' party on Sunday, 17th December, from 9AM until 7PM at HI-Toyz local store! It's all about 'Fun, food, & LEGO'!</p>
+                        </div>
+                    </div>
+        
+                    <div class="EventClickedNavigator">
+                        <div class="Event-Clicked-Button1"></div>
+                        <div class="Event-Clicked-Button2"></div>
+                        <div class="Event-Clicked-Button3"></div>
+                    </div>
+                </div>
+                <div class="EventManualNavigator">
+                    <label for="EventRadio1" class="Event-Manual-Button"></label>
+                    <label for="EventRadio2" class="Event-Manual-Button"></label>
+                    <label for="EventRadio3" class="Event-Manual-Button"></label>
+                </div>
+            </div>
+        </div>
+        <h1>Promos</h1>
+        <div class="Slider-Container">
+            <div class="PromoSlider">
+                <div class="PromoSlides">
+                    <input type="radio" name="radio-button" id="PromoRadio1">
+                    <input type="radio" name="radio-button" id="PromoRadio2">
+                    <input type="radio" name="radio-button" id="PromoRadio3">
+        
+                    <div class="PromoSlide First">
+                        <img src="./Assets/Promo1.jpg" alt="">
+                        <div class="PromoCaption">
+                            <h3>Kids Toys Sale</h3>
+                            <p>Come to 'Kids Toys Sale' and get 50% discount for all toys from June 5th until July 31st!!</p>
+                        </div>
+                    </div>
+                    <div class="PromoSlide">
+                        <img src="./Assets/Promo2.jpg" alt="">
+                        <div class="PromoCaption">
+                            <h3>3 On 2 Week</h3>
+                            <p>New promo of the week! 3 on 2 for all toys! What are you waiting for? Come and get it!</p>
+                        </div>
+                    </div>
+                    <div class="PromoSlide">
+                        <img src="./Assets/Promo3.png" alt="Kids Toys Sale">
+                        <div class="PromoCaption">
+                            <h3>Christmas Promo</h3>
+                            <p>Get 25% discount for ALL toys and draw a free gift! Come and get it starting 25th December, 2023 until January 31st, 2024.</p>
+                        </div>
+                    </div>
+        
+                    <div class="PromoClickedNavigator">
+                        <div class="Promo-Clicked-Button1"></div>
+                        <div class="Promo-Clicked-Button2"></div>
+                        <div class="Promo-Clicked-Button3"></div>
+                    </div>
+                </div>
+                <div class="PromoManualNavigator">
+                    <label for="PromoRadio1" class="Promo-Manual-Button"></label>
+                    <label for="PromoRadio2" class="Promo-Manual-Button"></label>
+                    <label for="PromoRadio3" class="Promo-Manual-Button"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Footer">
+        <div class="Inner-Footer">
+            <div class="Quick-Links">
+                <h3>Quick Links</h3>
+                <a href="HomePage.html" class="Links">Home</a>
+                <a href="ProductsPage.html" class="Links">Products</a>
+                <a href="GalleryPage.html" class="Links">Gallery</a>
+                <a href="EventPage.html" class="Links">Event</a>
+                <a href="RegisterPage.html" class="Links">Register</a>
+            </div>
+            <div class="Helper-Links">
+                <h3>Some Links</h3>
+                <a href="#" class="Links">FAQ</a>
+                <a href="#" class="Links">Terms</a>
+                <a href="#" class="Links">About</a>
+                <a href="#" class="Links">Support</a>
+            </div>
+            <div class="Social-Links">
+                <h3>Contact Us</h3>
+                <div class="Social-Media-Icons">
+                    <img src="./Assets/Facebook.png" alt="" width="35px">
+                    <img src="./Assets/Instagram.png" alt="" width="35px">
+                    <img src="./Assets/Twitter.png" alt="" width="35px">
+                    <img src="./Assets/Email.png" alt="" width="42px">
+                </div>
+            </div>
+        </div>
+        <div class="Outer-Footer">
+            Copyright &copy; HI-Toyz, 2023. All Right Reserved.
+        </div>
+    </div>
+</body>
+</html>
